@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2C3036;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    background: #008752;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+}
+
+.button:hover {
+    background: #26CD8B;
+}
+
+.button:active {
+    background: #005232;
+}
+
+.banner-button {
+    background: #95459A;
+}
+
+.footer {
+    background: #00559D;
+}
+
+.undotted {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
