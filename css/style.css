@@ -1,43 +1,96 @@
-body {
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 21px;
-    color: #2C3036;
+.banner {
+    /* background: url(../img/fon.jpg) no-repeat center #E0E7ED; */
+
+    background-image: url(../img/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #E0E7ED;
+    /* background-size: contain; */
+    padding: 145px 0 286px;
+    margin-bottom: 80px;
 }
 
-a {
-    text-decoration: none;
-}
-
-.button {
-    background: #008752;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    border: none;
-}
-
-.button:hover {
-    background: #26CD8B;
-}
-
-.button:active {
-    background: #005232;
+.banner-title {
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 100%;
+    color: #00559D;
+    max-width: 80%;
+    margin: 0 0 47px;
 }
 
 .banner-button {
-    background: #95459A;
+    max-width: 360px;
+    font-size: 24px;
+    line-height: 29px;
 }
 
-.footer {
-    background: #00559D;
+
+/* SERVICE */
+
+.services {
+    margin-bottom: 110px;
 }
 
-.undotted {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.services-title {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #00559D;
+    text-align: center;
+    margin: 0 0 50px;
 }
 
+.services-list {
+    display: flex;
+    margin: 0 -10px;    
+}
+
+.services-item {
+    max-width: 280px;
+    margin: 10px;
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 106px;
+}
+
+.about:after {
+    content: '';
+    display: block;
+    width: 570px;
+    height: 499px;
+    background: #008752;
+    position: absolute;
+    top: 40px;
+    right: -70px;
+    z-index: -1;
+}
+
+.about-wrapper {
+    margin-right: 10%;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.about-title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100%;
+    color: #005DAB;
+    margin: 0 0 46px;
+}
+
+/* AWARDS */
+
+.awards-list {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2C3036;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.button {
+    background: #008752;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    display: block;
+    max-width: 181px;
+    width: 100%;
+    padding: 11px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #26CD8B;
+}
+
+.button:active {
+    background: #005232;
+}
+
+.button-secondary {
+    background: #95459A;
+}
+
+.banner-button {
+    background: #95459A;
+}
+
+.hidden {
+    font-size: 0;
+    width: 0;
+    height: 0;
+}
+
+.undotted {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item a {
+    margin-right: 15px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.header-phone {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    color: #95459A;
+    margin-right: 24px;
+}
+
+.header-nav {
+    margin: 0 auto 0 25px;
+}
+
+/* MAP */
+
+.map {
+    background: url(../img/map.jpg) no-repeat;
+    background-size: cover;
+    padding: 40px 0 133px;
+}
+
+.map-wrapper {
+    background: #008752;
+    max-width: 380px;
+    
+    padding: 50px 44px 26px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #00559D;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-info {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.social {
+    display: flex;
+}
