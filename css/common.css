@@ -47,8 +47,12 @@ img {
     background: #95459A;
 }
 
-.banner-button {
-    background: #95459A;
+.button-secondary:hover {
+    background: #D665DD;
+}
+
+.button-secondary:active {
+    background: #722A77;
 }
 
 .hidden {
@@ -114,8 +118,21 @@ img {
 .map-wrapper {
     background: #008752;
     max-width: 380px;
-    
     padding: 50px 44px 26px;
+    color: #fff;
+}
+
+.map-title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 17px;
+}
+
+.map-phone {
+    color: #fff;
+    margin-bottom: 23px;
+    display: block;
 }
 
 
