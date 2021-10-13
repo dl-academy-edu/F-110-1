@@ -4,156 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/contact.css">
     <title>Contact Us</title>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="img/logo.svg" alt="">
-        </a>
-        
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Catalog</a>
-                </li>
-                <li>
-                    <a href="#">Catalog</a>
-                </li>
-                <li>
-                    <a href="#">Catalog</a>
-                </li>
-                <li>
-                    <a href="#">Catalog</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="tel:7194319698">719-431-9698</a>
-        <a href="contact.html" class="button">Contact Us</a>
-    </header>
-    <main>
+    <header class="header container">
+		<img src="img/logo.svg" alt="">
+		<nav class="header-nav">
+			<ul class="undotted header-list">
+				<li class="header-item">
+					<a href="catalog.html" class="header-link">Catalog</a>
+				</li>
+				<li class="header-item">
+					<a href="#">Servises</a>
+				</li>
+
+                
+				<li class="header-item">
+					<a href="#">Blog</a>
+				</li>
+				<li class="header-item">
+					<a href="#">About us</a>
+				</li>
+			</ul>
+		</nav>
+		<a href="tel:7194319698" class="header-phone">719-431-9698</a>
+		<a href="contact.html" class="button" id="contact-btn">Contact Us</a>
+	</header>
+    <main class="container">
 
         <section>
-            <h1>Contact Us</h1>
-            <form action="#" method="POST">
+            <h1 class="contact-title">Contact Us</h1>
+            <form action="#" method="POST" class="contact-form">
                 <fieldset>
-                    <div>
-                        <div>
+                    <div class="field-2-column">
+                        <div class="label-wrapper">
                             <label for="input-name">Name</label>
                             <input type="text" id="input-name" placeholder="Ivan Ivanov">
                         </div>
-                        <div>
-                            <label>
-                                <span>Phone</span>
-                                <input type="number">
-                            </label>
-                            
-                        </div>
+                        <label class="label-wrapper">
+                            <span class="label">Phone</span>
+                            <input type="number">
+                        </label>
                     </div>
-                    <label for="input-email">E-mail</label>
-                    <input type="email" id="input-email" required>
+
+                    <div class="label-wrapper">
+                        <label for="input-email">E-mail</label>
+                        <input type="email" id="input-email" required>
+                    </div>
                     
                 </fieldset>
 
                 <fieldset>
                     <legend>Payment Methods</legend>
-                    <ul>
+                    <ul class="undotted checkbox-list">
                         <li>
-                            <input type="checkbox" name="check-cash" id="checkbox-cash" checked>
-                            <label for="checkbox-cash">Сash</label>
+                            <input type="checkbox" name="check-cash" id="checkbox-cash" class="checkbox-input" checked>
+                            <label for="checkbox-cash" class="checkbox-label">Сash</label>
                         </li>
-                        <li>
+                        <!-- <li>
                             <label>
                                 <input type="checkbox" name="check-card">
                                 Сredit Сard
                             </label>
+                        </li> -->
+                        <li>
+                            <input type="checkbox" name="check-card" class="checkbox-input" id="checkbox-card">
+                            <label for="checkbox-card" class="checkbox-label">Сredit Сard</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="check-receipt" id="checkbox-receipt" disabled>
-                            <label for="checkbox-receipt">Receipt</label>
+                            <input type="checkbox" name="check-receipt" class="checkbox-input" id="checkbox-receipt" disabled>
+                            <label for="checkbox-receipt" class="checkbox-label">Receipt</label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <input type="date" id="input-city">
-                <label for="input-city">City of Birth</label>
+                <div class="label-wrapper">
+                    <label for="input-city">City of Birth</label>
+                    <input type="date" id="input-city">
+                </div>
 
 
                 <fieldset>
                     <legend>Do you need a report on the services provided?</legend>
-                    <ul>
+                    <ul class="undotted radio-list">
                         <li>
                             <label>
-                                <input type="radio" name="report" checked>
-                                Yes
+                                <input type="radio" name="report" class="radio-input" checked>
+                                <span class="radio-label">Yes</span>
                             </label>
                         </li>
                         <li>
-                            <input type="radio" name="report" id="radio-no">
-                            <label for="radio-no">no</label>
+                            <input type="radio" name="report" id="radio-no" class="radio-input">
+                            <label for="radio-no" class="radio-label">no</label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <label for="text-message">Message</label>
-                <textarea cols="20" rows="3" id="text-message" placeholder="Message"></textarea>
+                <div class="label-wrapper">
+                    <label for="text-message">Message</label>
+                    <textarea id="text-message" placeholder="Message"></textarea>
+                </div>
 
-                <label>
-                    Range
-                    <input type="range">
-                </label>
-                
-
-                <button type="submit">SUBMIT</button>
+                <button type="submit" class="button">SUBMIT</button>
 
             </form>
         </section>
 
     </main>
 
-    <article>
-        <h3>Chem-Dry</h3>
-        <p>9420 Cedar CT, Thornton, CO 80229</p>
-        <a href="tel:7206059399">(720) 605-9399</a>
-        <a href="#" class="button">Learn More</a>
-        <img src="#" alt="">
-    </article>
+    <article class="map">
+		<div class="container">
+			<div class="map-wrapper">
+				<h3 class="map-title">Chem-Dry</h3>
+				<p>9420 Cedar CT, Thornton, CO 80229</p>
+				<a href="tel:7206059399" class="map-phone">(720) 605-9399</a>
+				<a href="#" class="button button-secondary">Learn More</a>
+			</div>
+		</div>
+		
+	</article>
 
-    <footer>
-        <p>Subscribe to our social networks</p>
-        <ul>
-            <li>
-                <a href="#" target="_blank">
-                    <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
-                        </svg>                        
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
-                        </svg>                        
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
-                        </svg>
-                        
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
-                        </svg>
-                        
-                </a>
-            </li>
-        </ul>
-    </footer>
+	<footer class="footer">
+		<div class="container">
+			<p class="footer-info">Subscribe to our social networks</p>
+			<ul class="undotted social">
+				<li>
+					<a href="#" target="_blank">
+						<svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
+								fill="white" />
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
+								fill="white" />
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
+								fill="white" />
+						</svg>
+
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
+								fill="white" />
+						</svg>
+
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+	</footer>
 </body>
 </html>

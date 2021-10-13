@@ -6,7 +6,7 @@
     background-position: center;
     background-color: #E0E7ED;
     /* background-size: contain; */
-    padding: 145px 0 286px;
+    padding: 153px 0 288px;
     margin-bottom: 80px;
 }
 
@@ -17,6 +17,7 @@
     color: #00559D;
     max-width: 80%;
     margin: 0 0 47px;
+    letter-spacing: -1px;
 }
 
 .banner-button {
