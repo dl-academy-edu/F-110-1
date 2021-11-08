@@ -119,6 +119,19 @@
     display: none;
 }
 
+.popup-open {
+    display: block;
+}
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .popup-form {
     max-width: 680px;
     background: #EEEEEE;
@@ -127,9 +140,4 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-.popup-close {
-    position: absolute;
-    top: 50px;
-    right: 50px;
 }
